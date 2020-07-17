@@ -15,4 +15,9 @@ class RingBuffer:
                 self.index = 0
 
     def get(self):
-        return self.values
+        # return self.values
+        result = []
+        for i in self.values:
+            if i:
+                result.append(i)
+        return result
